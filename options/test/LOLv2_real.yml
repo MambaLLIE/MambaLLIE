@@ -1,0 +1,50 @@
+# general settings
+name: test_LOLv2_real
+model_type: MambaLLIE
+scale: 1
+num_gpu: 1
+manual_seed: 10
+
+datasets:
+  test:
+    task: LLIE
+    name: LOL
+    type: PairedImageDataset
+    dataroot_gt: /opt/data/private/Dataset/LOLv2/Real_captured/Test/Normal/
+    dataroot_lq: /opt/data/private/Dataset/LOLv2/Real_captured/Test/Low/
+    io_backend:
+      type: disk
+
+# network structures
+network_g:
+  type: MambaLLIE
+  nf: 48
+  img_size: 128
+  d_state: 32
+  depths: [1,2,2,2,2,1]
+  embed_dim: 48
+  mlp_ratio: 2
+
+
+# path
+path:
+  pretrain_network_g: /path/
+  strict_load_g: True
+
+# validation settings
+val:
+  save_img: True
+
+  suffix: ~  # add suffix to saved images, if None, use exp name
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 0
+      test_y_channel: false
+    ssim:
+      type: calculate_ssim
+      crop_border: 0
+      test_y_channel: false
+
+
