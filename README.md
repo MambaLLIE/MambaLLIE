@@ -26,7 +26,7 @@ Please see [Conda.sh] for the installation of dependencies required to run Mamba
 
   Coming soon~!!!
 
-## Citation
+<!-- ## Citation
 If you use MambaLLIE, please consider citing:
 
     @article{weng2024mamballie,
@@ -38,4 +38,4 @@ If you use MambaLLIE, please consider citing:
 
 
 ## Contact
-Should you have any question, please contact waynejoneswjw@gmail.com.
+Should you have any question, please contact waynejoneswjw@gmail.com. -->
