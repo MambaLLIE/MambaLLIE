@@ -25,18 +25,20 @@ Please see [Conda.sh] for the installation of dependencies required to run Mamba
 
 ## Training and Evaluation
 
-  Coming soon~!!!
+Our models and weights are coming soon. It might take me some time to sort it.
 
-<!-- ## Citation
-If you use MambaLLIE, please consider citing:
+```shell
+# activate the environment
+conda activate MambaLLIE
 
-    @article{weng2024mamballie,
-        title={MambaLLIE: Implicit Retinex-Aware Low Light Enhancement with Global-then-Local State Space},
-        author={Weng, Jiangwei and Yan, Zhiqiang and Tai, Ying and Qian, Jianjun and Yang, Jian and Li, Jun},
-        journal={arXiv preprint arXiv:2405.16105},
-        year={2024}
-      }
+# Train LOL-v2-real
+python3 basicsr/train.py --opt options/train/LOLv2_real.yml
 
+# Test LOL-v2-real
+python3 basicsr/test.py --opt options/test/LOLv2_real.yml
 
-## Contact
-Should you have any question, please contact waynejoneswjw@gmail.com. -->
+```
+
+## Acknowledgement
+
+This code is based on [BasicSR](https://github.com/XPixelGroup/BasicSR), [MambaIR](https://github.com/csguoh/MambaIR) ,and [Retinexformer](https://github.com/caiyuanhao1998/Retinexformer), [SNR-Net](https://github.com/dvlab-research/SNR-Aware-Low-Light-Enhance) [LSKNet](https://github.com/zcablii/LSKNet). Thanks for their awesome work. -->
