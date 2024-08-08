@@ -41,4 +41,4 @@ python3 basicsr/test.py --opt options/test/LOLv2_real.yml
 
 ## Acknowledgement
 
-This code is based on [BasicSR](https://github.com/XPixelGroup/BasicSR), [MambaIR](https://github.com/csguoh/MambaIR) ,and [Retinexformer](https://github.com/caiyuanhao1998/Retinexformer), [SNR-Net](https://github.com/dvlab-research/SNR-Aware-Low-Light-Enhance) [LSKNet](https://github.com/zcablii/LSKNet). Thanks for their awesome work. -->
+This code is based on [BasicSR](https://github.com/XPixelGroup/BasicSR), [MambaIR](https://github.com/csguoh/MambaIR), [Retinexformer](https://github.com/caiyuanhao1998/Retinexformer), [SNR-Net](https://github.com/dvlab-research/SNR-Aware-Low-Light-Enhance), and [LSKNet](https://github.com/zcablii/LSKNet). Thanks for their awesome work. -->
